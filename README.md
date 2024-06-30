@@ -1,6 +1,3 @@
-Here's a template for a GitHub README file for your company microservice:
-
----
 
 # Company Microservice
 
