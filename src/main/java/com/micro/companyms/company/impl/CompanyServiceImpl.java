@@ -5,6 +5,7 @@ package com.micro.companyms.company.impl;
 import com.micro.companyms.company.Company;
 import com.micro.companyms.company.CompanyRepository;
 import com.micro.companyms.company.CompanyService;
+import com.micro.companyms.company.dto.ReviewMessage;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -56,6 +57,11 @@ public class CompanyServiceImpl implements CompanyService {
     @Override
     public Company getCompanyById(Long id) {
         return companyRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public void updateCompanyRating(ReviewMessage reviewMessage) {
+        System.out.println(reviewMessage.getDescription());
     }
 
 }
